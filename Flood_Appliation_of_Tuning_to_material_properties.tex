@@ -1,0 +1,79 @@
+% \documentclass[referee,sn-basic]{sn-article-template/sn-jnl}% referee option is meant for double line spacing
+\documentclass[pdflatex,sn-basic]{sn-jnl}
+\jyear{2022}
+
+\usepackage{caption,subcaption}
+\usepackage{placeins}
+\usepackage{acronym}
+% \usepackage{amsmath}
+\input{sections/acronyms}
+
+% \journalname{Lasers in Manufacturing and Materials Processing}
+
+\newcommand{\degree}{$^\circ$}
+\graphicspath{{images/}}
+
+\begin{document}
+\title[Searching for unknown material properties for AM simulations]{Application of mathematical search algorithms for unknown material properties in Additive Manufacturing simulations}
+
+
+\author[1]{\fnm{Aaron} \sur{Flood}}\email{ajfrk6@umsystem.edu}
+\author[1]{\fnm{Frank} \sur{Liou}}\email{liou@umsystem.edu}
+
+\affil[1]{\orgdiv{Mechanical and Aerospace Engineering}, \orgaddress{\street{194 Toomey Hall}, \city{Rolla}, \postcode{65409}, \state{MO}, \country{USA}}}
+
+\abstract{
+	\input{sections/abstract}
+	}
+\keywords{\acf{AM}, Mathematical modeling, Sensitivity analysis, Aluminum}
+
+
+
+\maketitle
+
+\section{Introduction}
+	\subsection{\Acf{AM} simulations}
+	\input{sections/introAMsim}
+
+
+	\subsection{Simulation description}
+	\input{sections/model_description}
+	% \FloatBarrier
+
+\section{Tuning algorithm implementation}
+	\subsection{Selection of Properties}
+	\input{sections/sensetivity_results}
+
+	\subsection{Tuning algorithm description}
+	\input{sections/algrothim_description}
+
+	\subsection{Tuning and Simulation setup}
+	\input{sections/sim_setup}
+
+	\subsection{Simulation analysis}
+	\input{sections/sim_analysis}
+	% \FloatBarrier
+
+\section{Results}
+	\subsection{Search algorithm results}
+	\input{sections/results}
+
+	\subsection{Search results validation}
+	\input{sections/validation}
+
+% \FloatBarrier
+
+\section{Conclusions}
+\input{sections/conclusions}
+
+% \section{Declarations}
+% \begin{description}
+	% \item[Funding:] This project was supported by National Science Foundation Grants CMMI 1625736 and EEC 1937128, Product Innovation and Engineering through Navy STTR project Contract \#N6833520C0029, and the Intelligent Systems Center at Missouri S\&T,  Their financial support is greatly appreciated.
+	% \item[Financial interests:] All authors declare they have no financial interests.
+	% \item[Data Availability:] All data generated or analysed during this study are included in this published article.
+% \end{description}
+
+
+\bibliography{references.bib}
+
+\end{document}
