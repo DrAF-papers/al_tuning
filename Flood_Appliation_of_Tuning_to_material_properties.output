@@ -249,7 +249,6 @@ Overfull \hbox (0.63516pt too wide) in paragraph at lines 14--16
 1T6 
 
 Underfull \vbox (badness 10000) has occurred while \output is active
-Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
 [12]
 Underfull \hbox (badness 4940) in paragraph at lines 106--110
@@ -288,5 +287,5 @@ blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti10.pfb>
 Output written on Flood_Appliation_of_Tuning_to_material_properties.pdf (13 pag
-es, 2935064 bytes).
+es, 2934978 bytes).
 Transcript written on Flood_Appliation_of_Tuning_to_material_properties.log.
