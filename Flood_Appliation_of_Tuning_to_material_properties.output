@@ -215,19 +215,23 @@ Overfull \vbox (1.44444pt too high) has occurred while \output is active
 [5]) (./sections/sim_analysis.tex
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
-[6 <./images//melt_validation_example.png>]
-Overfull \hbox (17.00668pt too wide) detected at line 17
-[][]\OML/cmm/m/it/10 Response \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10 ^^C \OT1/cm
-r/m/n/10 100
-) (./sections/results.tex
+[6 <./images//melt_validation_example.png>]) (./sections/results.tex
+Underfull \vbox (badness 10000) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
-[7 <./images//7075_7_8C.jpg>])
+[7 <./images//7075_7_8C.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
-[8 <./images//response_complete.png> <./images//response_zoomed.png>]
-(./sections/validation.tex) (./sections/conclusions.tex)
-(./Flood_Appliation_of_Tuning_to_material_properties.bbl
+[8 <./images//response_complete.png> <./images//response_zoomed.png>])
+(./sections/validation.tex
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.44444pt too high) has occurred while \output is active
+[9 <./images//tuning_error_depth_complete.png> <./images//tuning_error_width_co
+mplete.png>]) (./sections/conclusions.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.44444pt too high) has occurred while \output is active
+[10 <./images//melt_track_val_baseline_depth.png> <./images//melt_track_val_bas
+eline_width.png>] (./Flood_Appliation_of_Tuning_to_material_properties.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 10--12
 []\OT1/cmr/m/n/10 AmesWeb (2022) ALU-MINUM 6061 MATE-RIAL PROP-ER-TIES.
 
@@ -240,19 +244,18 @@ Overfull \hbox (0.63516pt too wide) in paragraph at lines 14--16
 
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
-[9 <./images//tuning_error_depth_complete.png> <./images//tuning_error_width_co
-mplete.png>]
+[11 <./images//melt_track_val_depth.png> <./images//melt_track_val_width.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
-[10]
+[12]
 Underfull \hbox (badness 4940) in paragraph at lines 106--110
 []\OT1/cmr/m/n/10 Weiss D (2019a) Devel-op-ments in Aluminum-Scandium-Ceramic a
 nd
 )
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
-[11] (./Flood_Appliation_of_Tuning_to_material_properties.aux)
+[13] (./Flood_Appliation_of_Tuning_to_material_properties.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
@@ -281,6 +284,6 @@ type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti10.pfb>
-Output written on Flood_Appliation_of_Tuning_to_material_properties.pdf (11 pag
-es, 2815621 bytes).
+Output written on Flood_Appliation_of_Tuning_to_material_properties.pdf (13 pag
+es, 2940691 bytes).
 Transcript written on Flood_Appliation_of_Tuning_to_material_properties.log.

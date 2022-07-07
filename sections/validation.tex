@@ -1,6 +1,6 @@
 \label{validation}
 
-In order to ensure that the tuning results were valid across laser travel speeds and power levels a range of 8 other parameters were compared, the values used can be seen in Table \ref{tab:val_parameters}.
+In order to ensure that the search algorithm results were valid across laser travel speeds and power levels a range of 8 other parameters were compared, the values used can be seen in Table \ref{tab:val_parameters}.
 \begin{table}[!htb]
 	\centering
 	\caption{Validation processing parameters}
@@ -18,17 +18,39 @@ In order to ensure that the tuning results were valid across laser travel speeds
 		\end{tabular}
 \end{table}
 
-% \begin{figure}[!htb]\centering
-% 	\begin{subfigure}[c]{0.45\textwidth}\centering
-% 	\includegraphics[width=\textwidth]{melt_track_val_depth}
-% 	\caption{Melt track depth}
-% 	\label{fig:melt_track_val_depth}
-% 	\end{subfigure}\hfill{}
-% 		\begin{subfigure}[c]{0.45\textwidth}\centering
-% 		\includegraphics[width=\textwidth]{melt_track_val_width}
-% 		\caption{Melt track width}
-% 		\label{fig:melt_track_val_width}
-% 		\end{subfigure}
-% 	\caption{Comparison of experimental and simulated results for validation points}
-% 	\label{fig:melt_track_val}
-% \end{figure}
+These speeds and powers were first completed with the literature determined values from Table \ref{tab:starting_mat_prop_complete} and the results can be seen in Figure \ref{fig:melt_track_val_baseline}.
+\begin{figure}[!htb]\centering
+	\begin{subfigure}[c]{0.45\textwidth}\centering
+	\includegraphics[width=\textwidth]{melt_track_val_baseline_depth}
+	\caption{Melt track depth}
+	\label{fig:melt_track_val_baseline_depth}
+	\end{subfigure}\hfill{}
+		\begin{subfigure}[c]{0.45\textwidth}\centering
+		\includegraphics[width=\textwidth]{melt_track_val_baseline_width}
+		\caption{Melt track width}
+		\label{fig:melt_track_val_baseline_width}
+		\end{subfigure}
+	\caption{Comparison of experimental and simulated results for validation points}
+	\label{fig:melt_track_val_baseline}
+\end{figure}
+These results show that over the 9 initial parameter sets, when a melt track was developed, the average absolute value of the error in the depth was approximately 290\% and the average error in the width was approximately 265\%.  And to put into termos of the the response variable of the search algorithm, the sum of the width and depth error, would be 555\% combined error.
+Additionally, run 1 was unable to develop a melt pool, which is contrary to the experiments which had a stable melt track.  These results corroborate the results from Figure \ref{fig:response_complete} which showed that for the parameter set which show that the initial dataset of material properties found in literature is wholly inadequate for simulating the process at hand. 
+
+UPDATE WHEN RUN 8 IS COMPLETE
+
+In contrast to these results, the dataset which was found in Table \ref{tab:7000_mat_prop_complete} was used to simulate each parameter set, and the results can be seen in Figure \ref{fig:melt_track_val}.
+\begin{figure}[!htb]\centering
+	\begin{subfigure}[c]{0.45\textwidth}\centering
+	\includegraphics[width=\textwidth]{melt_track_val_depth}
+	\caption{Melt track depth}
+	\label{fig:melt_track_val_depth}
+	\end{subfigure}\hfill{}
+		\begin{subfigure}[c]{0.45\textwidth}\centering
+		\includegraphics[width=\textwidth]{melt_track_val_width}
+		\caption{Melt track width}
+		\label{fig:melt_track_val_width}
+		\end{subfigure}
+	\caption{Comparison of experimental and simulated results for validation points}
+	\label{fig:melt_track_val}
+\end{figure}
+These results show the average error in the width was approximately 17\% and the average error in the depth was approximately 5\%, which create a combined error of only 22\%.  These results show that the optimized dataset is better at predicting the combined error of the simulation by over 500\%.  This results in simulation which can be leveraged more intensely during the process development and build qualification process.  

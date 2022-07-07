@@ -1,9 +1,0 @@
-l.16 	Response = \= x
-                     +y \| \left( \frac{| Sim.\ Width - Exp.\ Width |}{Exp.\...
-
-? 
-! Emergency stop.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.16 	Response = \= x
-                     +y \| \left( \frac{| Sim.\ Width - Exp.\ Width |}{Exp.\...
