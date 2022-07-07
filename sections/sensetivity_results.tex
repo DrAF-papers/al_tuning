@@ -1,7 +1,9 @@
 \label{sensetivity_results}
 
+One of the attractive characteristics of the Nelder-Mead search algorithm, is its ability to sale to an unlimited number of unknowns.  The main adverse effects are the increased number of runs and the combination of the errors.  As the number of unknown increases the complexity of the search space increases, which in turn increases the number of iterations needed to find a minimum.  This can result in drastically longer wait times on search results.  Additionally, with the increased number of unknowns, the stop condition of the search algorithm will be met at a different interval since the stop condition is based on the variance in the simplex.  This may result in modifications to the stop conditions being necessary as larger number of unknowns are included.  If the response variable is properly defined, it will not affect the models results if more unknowns are included \cite{wang_2011}.
+
 In order to reduce the complexity of the search algorithm, a sensitivity analysis was performed in \ref{OTHERPAPER}.
-This work began by finding the material properties which were needed in the models these can be seen in Table \ref{tab:sens_properties}.
+This work began by finding the material properties which were needed in the models as summarized in Table \ref{tab:sens_properties}.
 \begin{table}[!htb]
 	\centering
 	\caption{Key material properties in thermal modeling of AM}
@@ -67,7 +69,7 @@ These properties were varied according to a Placket-Burman design of experiment 
 	\caption{Example measurements of the melt pool}
 	\label{fig:slices}
 \end{figure}
-Analyzing these results with Pareto charts of the standardized effects of the variables and partial regression plots of the residuals it was determined that the variables in Table \ref{tab:crit_mat_prop}.
+Analyzing these results with Pareto charts of the standardized effects of the variables and partial regression plots of the residuals it was determined that the variables in Table \ref{tab:crit_mat_prop} had a statically significant effect on the resulting melt track when modified.
 \begin{table}[!htb]
 	\centering
 	\caption{Critical material properties}
@@ -80,4 +82,4 @@ Analyzing these results with Pareto charts of the standardized effects of the va
 			Specific heat at 733\degree C \\ \hline
 		\end{tabular}
 \end{table}
-This work only focused on the material properties and the laser diameter was included due to the difficulty associated with accurately measuring the diameter.
+This work included the laser diameter in the search algorithms dataset due to the difficulty associated with accurately measuring the diameter.
