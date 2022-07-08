@@ -1,6 +1,5 @@
 % \documentclass[referee,sn-basic]{sn-article-template/sn-jnl}% referee option is meant for double line spacing
-\documentclass[pdflatex,sn-basic]{sn-jnl}
-\jyear{2022}
+\documentclass[pdflatex,sn-mathphys]{sn-jnl}
 
 \usepackage{caption,subcaption}
 \usepackage{placeins}
@@ -8,16 +7,18 @@
 % \usepackage{amsmath}
 \input{sections/acronyms}
 
-% \journalname{Lasers in Manufacturing and Materials Processing}
+% \journalname{Progress in Additive Manufacturing}
+\jyear{2022}
 
 \newcommand{\degree}{$^\circ$}
 \graphicspath{{images/}}
+\keywords{\Acf{AM}, Mathematical modeling, Mathematical search, Material properties, Aluminum}
 
-\begin{document}
 \title[Searching for unknown material properties for AM simulations]{Application of mathematical search algorithms for unknown material properties in Additive Manufacturing simulations}
 
-
 \author[1]{\fnm{Aaron} \sur{Flood}}\email{ajfrk6@umsystem.edu}
+\author[1]{\fnm{Rachel} \sur{Boillat}}\email{rmb8t6@umsystem.edu}
+\author[1]{\fnm{Sriram} \sur{Isanaka}}\email{sihyd@umsystem.edu}
 \author[1]{\fnm{Frank} \sur{Liou}}\email{liou@umsystem.edu}
 
 \affil[1]{\orgdiv{Mechanical and Aerospace Engineering}, \orgaddress{\street{194 Toomey Hall}, \city{Rolla}, \postcode{65409}, \state{MO}, \country{USA}}}
@@ -25,10 +26,8 @@
 \abstract{
 	\input{sections/abstract}
 	}
-\keywords{\acf{AM}, Mathematical modeling, Sensitivity analysis, Aluminum}
 
-
-
+\begin{document}
 \maketitle
 
 \section{Introduction}
@@ -42,7 +41,6 @@
 
 \section{Tuning algorithm implementation}
 	
-	% One research question you may explore:  how many unknown parameters can your approach handle and what are the errors when increasing the number of unknowns? 
 	\subsection{Tuning algorithm description}
 	\input{sections/algrothim_description}
 
@@ -62,20 +60,17 @@
 
 	\subsection{Search results validation}
 	\input{sections/validation}
-
-	
-	% For validation and demonstration, you might like to find a material with existing known parameters.  You can then use your approach to find one parameter that pretend to be unknown, such as thermal conductivity coefficient, etc.  Then you can compare the known parameter value with your calculation.  If successful, you can use two parameters that pretend to be unknown …
-% \FloatBarrier
+	\FloatBarrier
 
 \section{Conclusions}
 \input{sections/conclusions}
 
-% \section{Declarations}
-% \begin{description}
-	% \item[Funding:] This project was supported by National Science Foundation Grants CMMI 1625736 and EEC 1937128, Product Innovation and Engineering through Navy STTR project Contract \#N6833520C0029, and the Intelligent Systems Center at Missouri S\&T,  Their financial support is greatly appreciated.
-	% \item[Financial interests:] All authors declare they have no financial interests.
-	% \item[Data Availability:] All data generated or analysed during this study are included in this published article.
-% \end{description}
+\section{Declarations}
+\begin{description}
+	\item[Funding:] This research was partially funded by the National Science Foundation Grants CMMI 1625736 and EEC 1937128, Intelligent Systems Center and Material Research Center at Missouri S\&T. Their financial support is greatly appreciated.
+	\item[Financial interests:] All authors declare they have no financial interests.
+	\item[Data Availability:] All data generated or analyzed during this study are included in this published article.
+\end{description}
 
 
 \bibliography{references.bib}
