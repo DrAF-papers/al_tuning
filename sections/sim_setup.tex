@@ -30,8 +30,7 @@ The starting values which were used as the starting point for the search algorit
 			Laser diameter & & 1.6 mm & \\ \hline
 		\end{tabular}
 \end{table}
-
-\todo{blurb about constraints on properties}
+To ensure the search algorithm did not waste time searching in unacceptable regions the constraint was included that none of the material properties were allowed to become negative.  This was the only constraint which was needed in addition to the inherent constraints of the Nelder-Mead algorithm.
 
 The experimental setup which was used was a simple laser scanning of the surface of a substrate, as shown in Figure \ref{fig:melt_validation_example}, with the parameters shown in Table \ref{tab:exp_constants}.  This was chosen in order to simplify the experiment.  This setup removes the complexity associated with adding material which includes the rate of material addition, molten metal flow parameters, and acceleration effect associated with turning during deposits.
 \begin{figure}[!htb]
