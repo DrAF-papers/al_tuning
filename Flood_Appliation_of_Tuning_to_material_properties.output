@@ -110,11 +110,7 @@ See the caption package documentation for explanation.
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex)))
 (./sections/acronyms.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
-(./Flood_Appliation_of_Tuning_to_material_properties.aux
-
-LaTeX Warning: Label `eqn:eng_density' multiply defined.
-
-)
+(./Flood_Appliation_of_Tuning_to_material_properties.aux)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -172,93 +168,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\let' on input line 38.
 
 (./sections/introAMsim.tex
-
-Package natbib Warning: Citation `wangClosedLoopHighFidelitySimulation2021' on 
-page 1 undefined on input line 3.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active [1{/var/li
 b/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package natbib Warning: Citation `wangClosedLoopHighFidelitySimulation2021' on 
-page 2 undefined on input line 6.
-
-
-Package natbib Warning: Citation `royDatadrivenModelingThermal2020' on page 2 u
-ndefined on input line 6.
-
-
-Package natbib Warning: Citation `mogesHYBRIDMODELINGAPPROACH2020' on page 2 un
-defined on input line 6.
-
-
-Package natbib Warning: Citation `wangClosedLoopHighFidelitySimulation2021' on 
-page 2 undefined on input line 7.
-
-
-Package natbib Warning: Citation `royDatadrivenModelingThermal2020' on page 2 u
-ndefined on input line 8.
-
-
-Package natbib Warning: Citation `mogesHYBRIDMODELINGAPPROACH2020' on page 2 un
-defined on input line 9.
-
-
-Package natbib Warning: Citation `Daryabeigi2011' on page 2 undefined on input 
-line 10.
-
-
-Package natbib Warning: Citation `welschgerhard_1993' on page 2 undefined on in
-put line 12.
-
-
-Package natbib Warning: Citation `boivineau_2006' on page 2 undefined on input 
-line 12.
-
-
-Package natbib Warning: Citation `fan_2012' on page 2 undefined on input line 1
-2.
-
-
-Package natbib Warning: Citation `lundberg_material_1994' on page 2 undefined o
-n input line 12.
-
-
-Package natbib Warning: Citation `leitner_thermophysical_2017' on page 2 undefi
-ned on input line 12.
-
-
-Package natbib Warning: Citation `jmatpro' on page 2 undefined on input line 14
-.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
-[2]
-
-Package natbib Warning: Citation `qiHighStrengthLi2020' on page 3 undefined on 
-input line 19.
-
-
-Package natbib Warning: Citation `weissImprovedHighTemperatureAluminum2019' on 
-page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `weissDevelopmentsAluminumScandiumCeramicAlumi
-numScandiumCerium2019' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `singhAdditiveManufacturing4047' on page 3 und
-efined on input line 19.
-
-) (./sections/model_description.tex
-
-Package natbib Warning: Citation `Han2012' on page 3 undefined on input line 8.
-
-
-
+[2]) (./sections/model_description.tex
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
 [3]
@@ -279,198 +195,36 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.015> not available
 (Font)              size <5> substituted on input line 65.
 
 
-Package natbib Warning: Citation `welschgerhard_1993' on page 4 undefined on in
-put line 76.
-
-
-Package natbib Warning: Citation `mills_2002' on page 4 undefined on input line
- 77.
-
-
-Package natbib Warning: Citation `mills_2002' on page 4 undefined on input line
- 78.
-
-
-Package natbib Warning: Citation `mills_2002' on page 4 undefined on input line
- 79.
-
-
-Package natbib Warning: Citation `boivineau_2006' on page 4 undefined on input 
-line 80.
-
-
-Package natbib Warning: Citation `boivineau_2006' on page 4 undefined on input 
-line 81.
-
-
-Package natbib Warning: Citation `fan_2012' on page 4 undefined on input line 8
-2.
-
-
-Package natbib Warning: Citation `kurzynowskiEffectScanningSupport2019' on page
- 4 undefined on input line 86.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
 [4 <./images//TEMP.png> <./images//PHASE.png> <./images//COOLRATE.png>])
-(./sections/algrothim_description.tex
-
-Package natbib Warning: Citation `nelder_1965' on page 5 undefined on input lin
-e 3.
-
-
-Package natbib Warning: Citation `wang_2011' on page 5 undefined on input line 
-4.
-
-
-Package natbib Warning: Citation `nelder_1965' on page 5 undefined on input lin
-e 9.
-
-
-Package natbib Warning: Citation `nelder_1965' on page 5 undefined on input lin
-e 9.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
-[5]
+[5] (./sections/algrothim_description.tex
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
 [6 <./images//melt_track_image.png> <./images//melt_track_bitmap.png> <./images
-//ti64_melt_track_width.png> <./images//ti64_melt_track_depth.png>])
-(./sections/sensetivity_results.tex
-
-Package natbib Warning: Citation `wang_2011' on page 7 undefined on input line 
-3.
-
-
+//ti64_melt_track_width.png> <./images//ti64_melt_track_depth.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
-[7 <./images//nm_flow.png>]
-
-Package natbib Warning: Citation `joseph_r_davis_aluminum_2001' on page 8 undef
-ined on input line 15.
-
-
-Package natbib Warning: Citation `lundberg_material_1994' on page 8 undefined o
-n input line 16.
-
-
-Package natbib Warning: Citation `ulbrich_wire_2014' on page 8 undefined on inp
-ut line 17.
-
-
-Package natbib Warning: Citation `matweb' on page 8 undefined on input line 18.
-
-
-
-Package natbib Warning: Citation `joseph_r_davis_aluminum_2001' on page 8 undef
-ined on input line 22.
-
-
-Package natbib Warning: Citation `lundberg_material_1994' on page 8 undefined o
-n input line 23.
-
-
-Package natbib Warning: Citation `ulbrich_wire_2014' on page 8 undefined on inp
-ut line 24.
-
-
-Package natbib Warning: Citation `matweb' on page 8 undefined on input line 25.
-
-
-
-Package natbib Warning: Citation `matweb' on page 8 undefined on input line 29.
-
-
-
-Package natbib Warning: Citation `amesweb' on page 8 undefined on input line 30
-.
-
-
-Package natbib Warning: Citation `matweb' on page 8 undefined on input line 34.
-
-
-
-Package natbib Warning: Citation `schmitz_density_2012' on page 8 undefined on 
-input line 35.
-
-
-Package natbib Warning: Citation `leitner_thermophysical_2017' on page 8 undefi
-ned on input line 36.
-
-
-Package natbib Warning: Citation `lundberg_material_1994' on page 8 undefined o
-n input line 40.
-
-
-Package natbib Warning: Citation `leitner_thermophysical_2017' on page 8 undefi
-ned on input line 41.
-
-
-Package natbib Warning: Citation `lundberg_material_1994' on page 8 undefined o
-n input line 45.
-
-
-Package natbib Warning: Citation `leitner_thermophysical_2017' on page 8 undefi
-ned on input line 46.
-
-
-Package natbib Warning: Citation `funck_tailored_2014' on page 8 undefined on i
-nput line 50.
-
-
-Package natbib Warning: Citation `boyden_temperature_2006' on page 8 undefined 
-on input line 51.
-
-
-Package natbib Warning: Citation `el-hameed_anodic_2017' on page 8 undefined on
- input line 52.
-
-)
-Underfull \vbox (badness 10000) has occurred while \output is active
-Overfull \vbox (1.44444pt too high) has occurred while \output is active
-[8 <./images//slice_y_annotated.png> <./images//slice_x_annotated.png>]
+[7 <./images//nm_flow.png>]) (./sections/sensetivity_results.tex)
 (./sections/sim_setup.tex
-
-Package natbib Warning: Citation `nelder_1965' on page 9 undefined on input lin
-e 16.
-
-
-Package natbib Warning: Citation `boyden_temperature_2006' on page 9 undefined 
-on input line 25.
-
-
-Package natbib Warning: Citation `boyden_temperature_2006' on page 9 undefined 
-on input line 26.
-
-
-Package natbib Warning: Citation `leitner_thermophysical_2017' on page 9 undefi
-ned on input line 27.
-
-
-Package natbib Warning: Citation `leitner_thermophysical_2017' on page 9 undefi
-ned on input line 28.
-
-
-Package natbib Warning: Citation `leitner_thermophysical_2017' on page 9 undefi
-ned on input line 29.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
-[9]) (./sections/sim_analysis.tex
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.44444pt too high) has occurred while \output is active
+[9 <./images//slice_y_annotated.png> <./images//slice_x_annotated.png>])
+(./sections/sim_analysis.tex
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
 [10 <./images//melt_validation_example.png>]) (./sections/results.tex
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
-[11 <./images//7075_7_8C.jpg>])
+[11 <./images//7075_7_8C.jpg>]) (./sections/validation.tex
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
 [12 <./images//response_complete.png> <./images//response_zoomed.png>]
-(./sections/validation.tex
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
 [13 <./images//tuning_error_depth_complete.png> <./images//tuning_error_width_c
@@ -480,20 +234,37 @@ Overfull \vbox (1.44444pt too high) has occurred while \output is active
 [14 <./images//melt_track_val_baseline_depth.png> <./images//melt_track_val_bas
 eline_width.png> <./images//melt_track_val_depth.png> <./images//melt_track_val
 _width.png>] (./sections/conclusions.tex)
-(./Flood_Appliation_of_Tuning_to_material_properties.bbl)
-
-Package natbib Warning: There were undefined citations.
-
+(./Flood_Appliation_of_Tuning_to_material_properties.bbl
+Underfull \hbox (badness 1377) in paragraph at lines 78--90
+[]\OT1/cmr/m/n/10 Moges, T., Yang, Z., Jones, K., Feng, S., With-erell, P., Lu,
+ Y.:
 
 Underfull \vbox (badness 10000) has occurred while \output is active
 Overfull \vbox (1.44444pt too high) has occurred while \output is active
-[15] (./Flood_Appliation_of_Tuning_to_material_properties.aux)
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 212--224
+[]\OT1/cmr/m/n/10 Weiss, D.: Devel-op-ments in Aluminum-Scandium-Ceramic and
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.44444pt too high) has occurred while \output is active
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 333--339
+[]\OT1/cmr/m/n/10 ASM: Alu-minum 6061-T6; 6061-T651.
+
+Overfull \hbox (11.19075pt too wide) in paragraph at lines 333--339
+\OT1/cmr/m/n/10 http://asm.matweb.com/search/SpecificMaterial.asp?bassnum=MA606
+1T6
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--349
+[]\OT1/cmr/m/n/10 AmesWeb: ALU-MINUM 6061 MATE-RIAL PROP-ER-TIES.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.44444pt too high) has occurred while \output is active
+[17] (./Flood_Appliation_of_Tuning_to_material_properties.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
  )
 (see the transcript file for additional information)</usr/share/texlive/texmf-d
@@ -515,6 +286,6 @@ sfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 
-Output written on Flood_Appliation_of_Tuning_to_material_properties.pdf (15 pag
-es, 14417652 bytes).
+Output written on Flood_Appliation_of_Tuning_to_material_properties.pdf (17 pag
+es, 14427801 bytes).
 Transcript written on Flood_Appliation_of_Tuning_to_material_properties.log.

@@ -1,7 +1,7 @@
 \label{model_description}
 
 The model used in this study was developed at Missouri University of Science and Technology.
-This simulation has the express goals of being efficient while still holding true to physics models.  In order to accomplish this, it heavily leverages GPU processing utilizing image processing techniques.  The simulation was developed with the laser \ac{DED} processes in mind, however, it was developed in a modular manner such that it can be applied to most \ac{AM} processes. 
+This simulation has the express goal of being efficient while still holding true to physics models.  In order to accomplish this, it heavily leverages GPU processing by utilizing image processing techniques.  The simulation was developed with the laser \ac{DED} processes in mind, however, it was developed in a modular manner such that it can be applied to most \ac{AM} processes. 
 
 The model is a voxel-based simulation, which forgoes the calculation of the fluid flow and focuses on heat transfer and material insertion.  This decision was based on past simulation development experience, where it was determined that the calculation of the fluid flow was the most computationally expensive part of the simulation.   
 
@@ -28,7 +28,7 @@ The governing equations of the model developed can be seen in Equations \ref{eqn
 				\end{equation}
 In these equations, $\rho$ is density, $c_p$ is specific heat, $k$ is thermal conductivity, $h$ is convection coefficient, $\varepsilon$ is emissivity, $\sigma$ is Stefan-Boltzmann constant, n is a unit vector either in the x, y, or z directions, $\alpha$ is the absorption of the material with respect to the laser radiation, and $\phi_0$ is the laser power. 
 
-The main attributes of the model is its able to predict the thermal history of a part, Figure \ref{fig:TEMP}, the phase map of the part at any given time, Figure \ref{fig:PHASE}, and a cooling rate for any section of the part, Figure \ref{fig:COOLRATE}.  This helps to give a predictor of the microstructure within the deposition which is the driving force behind the final mechanical properties. 
+The main attributes of the model are its ability to predict the thermal history of a part, Figure \ref{fig:TEMP}, the phase map of the part at any given time, Figure \ref{fig:PHASE}, and a cooling rate for any section of the part, Figure \ref{fig:COOLRATE}.  This helps to give a predictor of the microstructure within the deposition which is the driving force behind the final mechanical properties. 
 \begin{figure}[!htb]\centering
     \begin{subfigure}[c]{0.3\textwidth}
 	\centering
@@ -55,10 +55,10 @@ Additionally, the laser in the simulation is modeled in 3-D to be able to take i
 \begin{equation}\label{eqn:bpp}
 	BPP = 0.5 \theta w_0
 \end{equation} 
-Lastly, the model includes true ray tracing enabling shadowing of the laser, the ability to define a mass which represents the machine acting as a heat sink during the build process, and the inclusion of temperature dependent material properties.
+Lastly, the model includes true ray tracing enabling shadowing of the laser, the ability to define a mass which represents the machine acting as a heat sink during the build process, and the inclusion of temperature-dependent material properties.
 
 The main objective of the model is to accurately predict the thermal history of the build.  
-In order to initially validate the models, the well characterized and published material of Ti-64 was used.  The validation was done by scanning a laser on the surface of a substrate at three energy densities with experimental parameters found in Table \ref{tab:ti64_parameters} and the material properties used in the simulations can be seen in Table \ref{tab:ti64_properties}.
+In order to initially validate the models, the well-characterized and published material of Ti-64 was used.  The validation was done by scanning a laser on the surface of a substrate at three energy densities with the experimental parameters found in Table \ref{tab:ti64_parameters} and the material properties used in the simulations can be seen in Table \ref{tab:ti64_properties}.
 \begin{table}[!htb] \centering
 	\caption{Laser parameters used in Ti-64 validation}
 	\label{tab:ti64_parameters}
@@ -83,7 +83,7 @@ In order to initially validate the models, the well characterized and published 
 	\end{tabular}
 \end{table}
 
-The energy density equation used in this validation can be seen in Equation \ref{eqn:eng_density}.  This equation was used because it takes into account the non-linearity by using the laser spot area in place of the diameter and is appropriate for the slower speed of \ac{DED} as compared to \ac{PBF} \cite{kurzynowskiEffectScanningSupport2019}.
+The energy density equation used in this validation can be seen in Equation \ref{eqn:eng_density}.  This equation was used because it takes into account the non-linearity of the laser diameter and its energy density by using the laser spot area in place of the diameter and is appropriate for the slower speed of \ac{DED} as compared to \ac{PBF} \cite{kurzynowskiEffectScanningSupport2019}.
 \begin{equation}
 	SED_{area} = \frac{Laser\ Power}{Spot\ Area * Scan\ Speed} \label{eqn:eng_density}
 \end{equation}
@@ -94,7 +94,7 @@ This energy density equation is contrary to \ac{PBF}, which uses an equation kno
 	VED_F = \frac{Laser\ Power}{(Scan\ Speed) (Laser\ Spot\ Diameter) (Layer\ thickness)} \label{eqn:vedf}
 \end{align}
 Due to the much slower scan speeds of \ac{DED}, this characterization is not useful.  This is due to the slower nature of \ac{DED} and the application of laser paths which are not in a hatch pattern.  A more appropriate method of calculating the energy is to use a surface energy density,  
-Equation \ref{eqn:sed_power}, which is typically reported in literature, however does not appropriately account for the quadratic relationship which is present in the relationship between the laser diameter and the energy density of the laser.  This analysis led to the application of \label{eqn:eng_density} in this study.
+Equation \ref{eqn:sed_power}, which is typically reported in the literature, however, does not appropriately account for the quadratic relationship which is present in the relationship between the laser diameter and the energy density of the laser.  This analysis led to the application of \ref{eqn:eng_density} in this study.
 \begin{equation}
 	SED_{power} = \frac{Laser\ Power}{(Scan\ Speed) (Laser\ Spot\ Diameter)} \label{eqn:sed_power}
 \end{equation}
@@ -116,7 +116,6 @@ In order to analyze the results, the samples from the three parameter sets were 
 	\caption{Analysis of sliced sample in Ti-64 validation}
 	\label{fig:melt_track}
 \end{figure}
-
 The experiment and simulation were compared and the resulting error for the width can be seen in Figure \ref{fig:ti64_melt_track_width} and the depth can be seen in Figure \ref{fig:ti64_melt_track_depth}.
 \begin{figure}[!htb]\centering
 	\begin{subfigure}[c]{0.45\textwidth}\centering
@@ -133,4 +132,4 @@ The experiment and simulation were compared and the resulting error for the widt
 	\label{fig:ti64_melt_track}
 \end{figure}
 From the plots, it can be seen that the simulation is capable of predicting the width within 3\% error and the depth error is between 15\% and 25\%.  The error in the width is very acceptable at less than 3\%.
-However, the error in the depth is larger due to the resolution of the simulation chosen and its relative size to the depth.  This error, of approximately 20\%, for the depths which range from 450-500 $\mu m$ is 1.3-1.7 times the resolution, 60 $\mu m$, of the simulation.  Since the trends of the simulation and experimentation match and the error is within two resolution distances the 20\% error in the depth is considered acceptable as well. 
+However, the error in the depth is larger due to the resolution (voxel size) of the simulation chosen and its relative size to the depth.  This error, of approximately 20\%, for the depths which range from 450-500 $\mu m$ is 1.3-1.7 times the resolution, 60 $\mu m$, of the simulation.  Since the trends of the simulation and experimentation match and the error is within two resolution distances the 20\% error in the depth is considered acceptable as well. 

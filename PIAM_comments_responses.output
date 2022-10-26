@@ -36,9 +36,6 @@ Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
-
-LaTeX Warning: Label `ppr-eqn:eng_density' multiply defined.
-
 (/usr/share/texlive/texmf-dist/tex/latex/acronym/acronym.sty
 (/usr/share/texlive/texmf-dist/tex/latex/bigfoot/suffix.sty)
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
@@ -75,5 +72,5 @@ ist, replaced by a fixed one
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on PIAM_comments_responses.pdf (3 pages, 65986 bytes).
+Output written on PIAM_comments_responses.pdf (3 pages, 66008 bytes).
 Transcript written on PIAM_comments_responses.log.
