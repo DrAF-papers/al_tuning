@@ -1,50 +1,85 @@
-% \documentclass[referee,sn-basic]{sn-article-template/sn-jnl}% referee option is meant for double line spacing
-\documentclass[pdflatex,sn-mathphys]{sn-jnl}
+\documentclass[metals,article,submit,pdftex,moreauthors]{Definitions/mdpi}
 
-\usepackage{caption,subcaption}
+%=================================================================
+% MDPI internal commands - do not modify
+\firstpage{1} 
+\makeatletter 
+\setcounter{page}{\@firstpage} 
+\makeatother
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2023}
+\copyrightyear{2023}
+%\externaleditor{Academic Editor: Firstname Lastname}
+\datereceived{ } 
+\daterevised{ } % Comment out if no revised date
+\dateaccepted{ } 
+\datepublished{ } 
+%\datecorrected{} % For corrected papers: "Corrected: XXX" date in the original paper.
+%\dateretracted{} % For corrected papers: "Retracted: XXX" date in the original paper.
+\hreflink{https://doi.org/} % If needed use \linebreak
+%\doinum{}
+%\pdfoutput=1 % Uncommented for upload to arXiv.org
+
+%=================================================================
+
+\usepackage{subcaption}
 \usepackage{placeins}
 \usepackage{acronym}
+
+% [Searching for unknown material properties for AM simulations]
+\Title{Application of mathematical search algorithms for unknown material properties in Additive Manufacturing simulations}
+
+\TitleCitation{Application of mathematical search algorithms for unknown material properties in Additive Manufacturing simulations}
+
+\newcommand{\orcidauthorA}{0000-0002-5929-8345} 
+\newcommand{\orcidauthorB}{0000-0002-4360-5013}
+\newcommand{\orcidauthorC}{0000-0002-4848-2817} 
+\newcommand{\orcidauthorD}{0000-0001-9505-0841} 
+
+% Authors, for the paper (add full first names)
+\Author{Aaron Flood $^{\dagger,\ddagger,}*$\orcidA{}, Rachel Boillat $^{1,\dagger,\ddagger,}$\orcidB{}, Sriram Isanaka $^{2,\dagger,\ddagger,}$\orcidC{} and Frank Liou $^{3,\dagger,\ddagger,}$\orcidD{}}
+
+\AuthorNames{Aaron Flood, Rachel Boillat, Sriram Isanaka and Frank Liou}
+
+\AuthorCitation{Flood, A.; Boillat, R.; Isanaka, S; Liou, F.}
+
+\address{%
+$^{1}$ \quad Affiliation 1; rmb8t6@umsystem.edu\\
+$^{2}$ \quad Affiliation 2; sihyd@umsystem.edu\\
+$^{3}$ \quad Affiliation 3; liou@umsystem.edu}
+
+\corres{Correspondence: ajfrk6@umsystem.edu}
+
+% Current address and/or shared authorship
+\firstnote{These authors contributed equally to this work.}
+\secondnote{Current address: Missouri University of Science and Technology; Department of Mechanical and Aerospace Engineering; 194 Toomey Hall; Rolla, MO 65409; United States} 
+
+\keyword{\Acf{AM}, Mathematical modeling, Mathematical search, Material properties, Aluminum}
+\newcommand{\degree}{$^\circ$}
+\graphicspath{{images/}}
+
+
 % \usepackage{amsmath}
 \input{sections/acronyms}
 
-
-
 \newcommand{\todo}[1]{\colorbox{red!20}{#1}}
 
-% \journalname{Progress in Additive Manufacturing}
-\jyear{2022}
+% \abstract{\input{sections/abstract}}
+\abstract{\Acf{AM} simulations have risen as a way to better understand the effect of processing parameters on builds.  They are effective for materials which are well characterized and published, however for newer or proprietary materials, they cannot provide accurate results due to the lack of knowledge of material properties.  This work demonstrates the process of the application of mathematical search algorithms to develop an optimized material dataset which results in accurate simulations.  This was done with 7000 series aluminum and the laser \acf{DED} process.  The Nelder-Mead search algorithm was able to develop an optimized dataset which had a combined width and depth error of just 9.1\%.  This optimization started from a generic aluminum material properties dataset found in the literature which had an initial error of 600\%.}
 
-\newcommand{\degree}{$^\circ$}
-\graphicspath{{images/}}
-\keywords{\Acf{AM}, Mathematical modeling, Mathematical search, Material properties, Aluminum}
-
-\title[Searching for unknown material properties for AM simulations]{Application of mathematical search algorithms for unknown material properties in Additive Manufacturing simulations}
-
-\author[1]{\fnm{Aaron} \sur{Flood}}\email{ajfrk6@umsystem.edu}
-\author[1]{\fnm{Rachel} \sur{Boillat}}\email{rmb8t6@umsystem.edu}
-\author[1]{\fnm{Sriram} \sur{Isanaka}}\email{sihyd@umsystem.edu}
-\author[1]{\fnm{Frank} \sur{Liou}}\email{liou@umsystem.edu}
-
-\affil[1]{\orgdiv{Mechanical and Aerospace Engineering}, \orgaddress{\street{194 Toomey Hall}, \city{Rolla}, \postcode{65409}, \state{MO}, \country{USA}}}
-
-\abstract{
-	\input{sections/abstract}
-	}
 
 \begin{document}
-\maketitle
 
 \section{Introduction}
-	\subsection{\Acf{AM} simulations}
 	\input{sections/introAMsim}
 
-
+\section{Materials and Methods}
 	\subsection{Simulation description}
 	\input{sections/model_description}
 	% \FloatBarrier
 
-\section{Tuning algorithm implementation}
-	
 	\subsection{Tuning algorithm description}
 	\input{sections/algrothim_description}
 
@@ -56,7 +91,6 @@
 
 	\subsection{Simulation analysis}
 	\input{sections/sim_analysis}
-	% \FloatBarrier
 
 \section{Results}
 	\subsection{Search algorithm results}
@@ -66,17 +100,55 @@
 	\input{sections/validation}
 	\FloatBarrier
 
-\section{Conclusions}
-\input{sections/conclusions}
-
-\section{Declarations}
-\begin{description}
-	\item[Funding:] This research was partially funded by the National Science Foundation Grants CMMI 1625736 and EEC 1937128, Intelligent Systems Center and Material Research Center at Missouri S\&T. Their financial support is greatly appreciated.
-	\item[Financial interests:] All authors declare they have no financial interests.
-	\item[Data Availability:] All data generated or analyzed during this study are included in this published article.
-\end{description}
+\section{Discussion}
+	\input{sections/conclusions}
+% \section{Conclusions} % optional
 
 
-\bibliography{references.bib}
+
+\vspace{6pt} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aaron Flood, Rachel Boillat, Sriram Isanaka and Frank Liou
+\authorcontributions{
+		Conceptualization, Aaron Flood and Frank Liou; 
+		methodology, Aaron Flood and Frank Liou; 
+		software, Aaron Flood; 
+		validation, Aaron Flood and Rachel Boillat; 
+		formal analysis, Aaron Flood; 
+		investigation, Aaron Flood, Rachel Boillat, and Sriram Isanaka; 
+		resources, Frank Liou; 
+		data curation, Aaron Flood and Rachel Boillat; 
+		writing---original draft preparation, Aaron Flood and Frank Liou; 
+		writing---review and editing, Aaron Flood and Frank Liou; 
+		visualization, Aaron Flood; 
+		supervision, Sriram Isanaka and Frank Liou; 
+		project administration, Frank Liou; 
+		funding acquisition, Frank Liou.
+		All authors have read and agreed to the published version of the manuscript.
+	}
+
+\funding{This research was partially funded by the National Science Foundation Grants CMMI 1625736 and EEC 1937128, Intelligent Systems Center and Material Research Center at Missouri S\&T. Their financial support is greatly appreciated.}
+
+\dataavailability{All data generated or analyzed during this study are included in this published article.} 
+
+% \acknowledgments{In this section you can acknowledge any support given which is not covered by the author contribution or funding sections. This may include administrative and technical support, or donations in kind (e.g., materials used for experiments).}
+
+\conflictsofinterest{The authors declare no conflict of interest.} 
+
+
+
+% \section{Declarations}
+% \begin{description}
+% 	\item[Funding:] This research was partially funded by the National Science Foundation Grants CMMI 1625736 and EEC 1937128, Intelligent Systems Center and Material Research Center at Missouri S\&T. Their financial support is greatly appreciated.
+% 	\item[Financial interests:] All authors declare they have no financial interests.
+% 	\item[Data Availability:] All data generated or analyzed during this study are included in this published article.
+% \end{description}
+
+\begin{adjustwidth}{-\extralength}{0cm}	
+	\reftitle{References}
+	\bibliography{references}
+	\PublishersNote{}
+\end{adjustwidth}
 
 \end{document}
