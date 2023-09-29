@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[margin=1in,letterpaper]{geometry}
+% \usepackage{caption,subcaption}
+% \usepackage{placeins}
+% \usepackage{acronym}
+\usepackage{xr}
+\usepackage{hyperref}
+% \input{sections/acronyms}
+\externaldocument[ppr-]{Flood_Appliation_of_Tuning_to_material_properties}
+
+\usepackage{acronym}
+\input{sections/acronyms}
+
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}}
+\begin{document}
+
+\title{Responses to comments from submission on PIAM-D-22-00159}
+\date{}
+
+\maketitle
+
+\subsection*{Reviewer \#1} The paper implemented the Nelder-Mead algorithm to search the unknown material properties in AM simulation. The method is pretty interesting and may be helpful for the additive manufacturing community. There are some unclear points that the authors should address.
+\begin{description}
+	\item[Comment 1.] there are many punctuation problems; the authors should correct them carefully. For example. 1) page 6, lines 55-57, "if the reflection point is larger than the expansion point the reflection point is used to replace the largest member of the simplex." There should have a comma between "the expansion point" and "the reflection point." 2) page 7, lines 40-41, "If the contraction point is smaller than the largest point of the simplex the contraction replaces the largest point and the algorithm is continued." There should have a comma between "the simplex" and "the contraction."
+ 	\item[Response:] These gramatical issues have been in addressed in Section \ref{ppr-algrothim_description} and throughout the article.
+ 	%
+ 	\item[Comment 2.] the authors mentioned the simulation model in section 1.2. It would be better if the authors could explain the model more clearly, such as its governing equations and the voxel size.
+ 	\item[Response:] A new paragraph has been added in Section \ref{ppr-model_description} which details the governing equations used in the model.
+ 	%
+ 	\item[Comment 3.] what does the "SED" mean in equation 2, page 5?
+ 	\item[Response:] This is now explained in Section \ref{ppr-model_description}.
+ 	%	
+ 	\item[Comment 4.] What are the constraints of material parameters in the Nelder-Mead search algorithm? How did the authors determine whether the optimized material properties exist in the real physical world?
+ 	\item[Response:] A new paragraph has been added in Section \ref{ppr-sim_setup} addressing this.
+ 	%	
+ 	\item[Comment 5.] The authors validated the optimized material properties by comparing the simulation results and experimental results of melt track depth and width. It would be better to add more comparisons, such as temperature distribution in the melting pool and its vicinity.
+ 	\item[Response:] The objective of the validation was to show that the optimization was successful, namely the results were more accurate after the optimization when compared to the initial dataset.  If another metric is deemed a more precise representation of accuracy of the simulation that metric should be used during the optimization.
+\end{description}
+
+\subsection*{Reviewer \#2} The article applies the mathematical search algorithms with a simulation model to find the unknown thermal properties of aluminum 7050.
+The application of the search algorithms is successful. In the demonstration, some significant thermal properties of 7050 aluminum, are found by the search algorithms and validated by a physical simulation model. The result shows that the mathematical search algorithms have the capability to solve the above reverse problem.
+Despite of this, there are some major weaknesses in this article:
+\begin{description}
+	\item[Comment 1.] The validness of the simulation model that is used to conduct the searching and validate the searched results.
+ 	%
+	\item[Comment 1.1] The article adopts a simulation model developed at Missouri University of Science and Technology. However, the article does not mention the physical insight of the model. If the physical insight is stated somewhere else, then a citation should be there. Otherwise, the validness of the model will be in doubt. Please elaborate the physical insight of the model.
+ 	\item[Response:] A new paragraph has been added in Section \ref{ppr-model_description} which details the governing equations used in the model.
+ 	%
+	\item[Comment 1.2] The article validates the model by some simulations of Ti64, instead of other aluminum alloys. The weight\% of AI in Ti64 is only around 6\%, but around 90\% in Aluminum 7050. The two material has significant differnece in the element components. In the research field of the modeling and simulation of AM, most published physical-based simulation models are only validated using only one material. There are many parameters in the simulation process that needs to be calibrated and validated. Therefore, whether the model validated by one material can be applied to another material is in doubt. Please justify this, or consider validing the model by a material that has higher similarity of Aluminum 7050. 
+ 	\item[Response:] The purpose of the initial validation referenced in this comment was to ensure that the new model developed at Missouri S\&T was appropriately formulated, which is what it showed by correctly modeling a well characterized material.  A mathematical model should be generic enough to simulate any material given the correct material properties.  The model was later validated with aluminum in Section \ref{ppr-validation} which took a range of setup parameters and showed the model was accurate for these parameters.
+ 	%
+	\item[Comment 1.3] The article claims that the 20\% error in the depth of the melt pool is accetable for the model. Since the subsequent searching and validation process is only based on the simulation model, all results might be subjected to an error of 20\%, or even higher. Please consider using a physical model with higher fidelity.
+ 	\item[Response:] The subsequent validation is done with physical experiments, see Section \ref{ppr-validation} and therefore are not subject to the 20\% error.
+ 	%
+	\item[Comment 2.]The validity of the searched material properties. 
+ 	%
+	\item[Comment 2.1] After the searching, the material properties have a significant change from the initial values, with relative difference of over 100\%. Although these searched properties provide better simulation result, are they realistic? The properties need further validation, e.g. against a measurement experiment. 
+ 	\item[Response:] The objective of the optimization was to develop a dataset which produced a more accurate simulation, not find the physical material properties.  As described in Section \ref{ppr-introAMsim}, mathematical models make assumptions about the physical processes which are taking place during an \ac{AM} build.  This can result in the physical measurements for material properties producing inaccurate simulations when compared to other datasets.  The end goal of this optimization is to ensure more confidence in the model which is done by producing more repeatable and accurate simulations. 
+ 	%
+	\item[Comment 2.2]The article does not mention the details of the expeiments whose results are shown in Fig. 11 and 12. Any repeat experiments to avoid random error? Without a clear description of the experiments, the results used to validate the material properties might not be convicing. Please elaborate the experiments. 
+ 	\item[Response:] A new paragraph was added in Section \ref{ppr-validation} addressing this.
+ 	%
+	\item[Comment 2.3] The error shown in Fig. 12(b) is not small. The article also mentions that the average error is 17\%. Such an error has shown that the result is not ideal. The fact that the error is improved from an initial value of over 500\% does not mean that the current 17\% is good and the searched properties are reliable. Can the search algorithms achieve smaller and more accetable errors? 
+ 	\item[Response:] A new paragraph was added in Section \ref{ppr-validation} addressing this.
+ 	%
+	\item[Comment 3.] Minor issue: there are some grammar mistakes in this article, which may affect the readness and soundness of the article. It is recommended to have an editor proofread the article.
+ 	\item[Response:] This has been addressed throughout the paper.
+\end{description}
+
+
+\end{document}

@@ -1,0 +1,107 @@
+
+\documentclass{letter}
+\usepackage{graphicx} % Required for including images
+
+\usepackage[
+	letterpaper, % Paper size, use letterpaper for US letter paper
+	top=2cm, % Top margin
+	bottom=2.0cm, % Bottom margin
+	left=3cm, % Left margin
+	right=3cm, % Right margin
+	headsep=0.8cm, % Space from the top margin to the baseline of the header
+	footskip=1.2cm, % Space from the bottom margin to the baseline of the footer
+	% showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage{XCharter} % Use the XCharter fonts
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\fancypagestyle{style}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+\pagestyle{style} 
+
+
+\begin{document}
+
+\vspace*{-2cm}
+\hfill\includegraphics[width=0.41\textwidth]{mstLogo.png}
+\vspace{-0.95cm}
+\rule{\linewidth}{1pt}
+\medskip
+
+
+\begingroup
+	\raggedleft % Right align text
+	\small % Font size
+	Missouri University of Science and Technology\\
+	Mechanical and Aerospace Engineering\\
+	194 Toomey Hall\\
+	Rolla, MO 65409\\
+	United States\\
+\endgroup
+
+
+\begingroup
+	Dr. Andrzej Gontarz \\
+	Guest Editor for the journal Metals \\
+	Special Issue: Advances in Modeling and Simulation in Metal Forming
+\endgroup
+
+% \medskip % Vertical whitespace
+
+September 29, 2023
+
+% \medskip % Vertical whitespace
+
+Dear Dr. Gontarz
+
+\smallskip % Vertical whitespace
+
+We wish to submit an original research article entitled ``Application of mathematical search algorithms for unknown material properties in Additive Manufacturing simulations'' for consideration to be published in the journal ``Metals'' in the Special issue: ``Advances in Modeling and Simulation in Metal Forming''.
+
+% Description of the research, why important, why interstering
+% It should be concise and explain why the content of the paper is significant, placing the findings in the context of existing work. It should explain why the manuscript fits the scope of the journal.
+One of the needs driving the mathematical modeling of Additive Manufacturing (AM) is the desire to reduce the cost of process and build strategy development by utilizing the virtual space.  This necessitates that models be fast and accurate.  This body of work aims at the latter goal of increasing model accuracy, namely for under characterized materials such as novel aluminum alloys.  
+
+The current state of the art centers around developing mathematical models and validating them using materials which are well characterized, such as Ti-64.  This work goes about more efficiently developing a material properties dataset for an under characterized material by foregoing the expensive property measurement process and utilizing an optimization routine to minimize the error of the model when compared to a representative experimental case study.  This new approach allows for the efficient development of datasets which produce accurate results for novel and under characterized alloys.  Allowing the AM process and build strategy development to occur much sooner in the development process and facilitate faster adoption of these new materials.
+
+We believe this work fits well into the niche created by this special issue.  It applies a mathematical model to the metal AM process which is one of the newest and least understood of the metal forming processes.  The work focuses an under characterized Aluminum alloy but can be applied to the AM of any under characterized or novel metal.
+
+We confirm that neither the manuscript nor any parts of its content are currently under consideration or published in another journal.
+All authors have approved the manuscript and agree with its submission to metals.
+
+\smallskip % Vertical whitespace
+
+Sincerely,
+
+Mr. Aaron Flood\\
+Ph.D Candidate\\
+ajfrk6@mst.edu
+
+Ms. Rachel Boillat\\
+Ph.D Candidate\\
+rmb8t6@mst.edu
+
+Dr. Sriram Isanaka\\
+Assistant Research Professor\\
+sihyd@mst.edu
+
+
+Dr. Frank Liou\\
+Michael and Joyce Bytnar Professor\\
+liou@mst.edu
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
