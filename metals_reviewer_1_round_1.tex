@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[margin=1in,letterpaper]{geometry}
+% \usepackage{caption,subcaption}
+% \usepackage{placeins}
+% \usepackage{acronym}
+\usepackage{xr}
+\usepackage{hyperref}
+% \input{sections/acronyms}
+\externaldocument[ppr-]{Flood_Appliation_of_Tuning_to_material_properties}
+
+\usepackage{acronym}
+\input{sections/acronyms}
+
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}}
+\begin{document}
+
+\title{Responses to comments from submission on metals-2665682\\Reviewer 1 Round 1}
+\date{}
+
+\maketitle
+
+This paper proposes a methodology to develop an optimized material dataset using a mathematical search algorithm for additive manufacturing simulations. The proposed method was applied to the laser directed energy deposition process of 7000 series aluminum. Optimization was started from datasets from the literature, and it was shown that the optimized datasets significantly improved the simulation accuracy. This method can be applied to any material, the properties of which have not been reported extensively, and is useful for improving simulation accuracy. Therefore, the referee recommends the paper to be accepted for publication in Metals. However, I have a few minor remarks on the following points.
+\begin{description}
+	\item[Comment 1.] In the captions of Figs. 8 and 9, the explanations of different marks should be added. The explanations are given in main text, but they would be better also in the captions.
+ 	\item[Response:] The captions of Figure \ref{ppr-fig:response_complete} and Figure \ref{ppr-fig:response_zoomed} have been updated to include the explanations of the markers, this is also noted in Footnote \ref{ppr-rev:figCaptions}.
+ 	% 
+	\item[Comment 2.] In Section 4, conclusions are stated instead of a discussion. The section title should be ``Conclusions''.
+ 	\item[Response:] A discussion section was added as Section \ref{ppr-discussion}, this is also noted in Footnote \ref{ppr-rev:dicussion} and the current Discussion section was more properly labeled as the Conclusions, Section \ref{ppr-conclusions} and also noted in Footnote \ref{ppr-rev:conclusions}
+\end{description}
+
+
+\end{document}

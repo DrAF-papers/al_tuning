@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[margin=1in,letterpaper]{geometry}
+% \usepackage{caption,subcaption}
+% \usepackage{placeins}
+% \usepackage{acronym}
+\usepackage{xr}
+\usepackage{hyperref}
+% \input{sections/acronyms}
+\externaldocument[ppr-]{Flood_Appliation_of_Tuning_to_material_properties}
+
+\usepackage{acronym}
+\input{sections/acronyms}
+
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}}
+\begin{document}
+
+\title{Responses to comments from submission on metals-2665682\\Reviewer 2 Round 1}
+\date{}
+
+\maketitle
+
+\begin{description}
+	\item[Comment 1.] abstract need to be improved.
+ 	\item[Response:] The abstract has been updated to better detail the scope and results of the paper, noted in Footnote \ref{ppr-rev:abstract}
+ 	% 
+	\item[Comment 2.] there is no conclusion.
+ 	\item[Response:] The previous discussion section was more appropriately renamed the Conclusions, Section \ref{ppr-conclusions} and also noted in Footnote \ref{ppr-rev:conclusions} and a new discussion section was added, Section \ref{ppr-discussion}, this is also noted in Footnote \ref{ppr-rev:dicussion}.  The new conclusions section was also updated to more directly highlight the results, Footnote \ref{ppr-rev:newConclusions}
+	%  
+	\item[Comment 3.] Have the authors tried other algorithms?
+	\item[Response:] The authors have not tried any other algorithms for the reasons detailed in the discussion section, noted with Footnote \ref{ppr-rev:algrothims}
+	% 
+	\item[Comment 4.] The laser - processed sample region is not half-spherical. So the ``depth'' is not accurate and cannot be used.
+	\item[Response:] The authors do not understand why the shape must be half spherical.  The depth in this work is the largest distance between the surface of the laser scanning surface and the bottom of the melted region.  This need not be the bottom of the of a circle just simply the deepest region of the melt track.  The authors would appreciate more insight into why it is believed this is an invalid measurement.
+	% 
+	\item[Comment 5.] the citation to previous works are not full.
+	\item[Response:] The introduction section has been updated to more fully present this work in the current state of the art and the result is a more fully referenced work.
+\end{description}
+
+
+\end{document}

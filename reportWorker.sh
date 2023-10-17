@@ -78,7 +78,9 @@ function cleanup() {
 	rm -f $1.tld
 	rm -f $1.ntn
 	rm -f $1.tdo
-	rm -f $1.output
+	rm -f $1.loc
+	rm -f $1.soc
+	# rm -f $1.output
 	
 	# if .errors is empty then delete it.
 	if [ ! -s $1.errors ] ; then
@@ -96,7 +98,7 @@ if [ $build == 1 ]; then
 	do
 		echo "Building file" $file
 		build $file
-		ghostscript $file
+		# ghostscript $file
 	done
 
 	if [ $clean == 1 ]; then

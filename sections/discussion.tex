@@ -1,0 +1,35 @@
+\label{discussion}
+
+\added{
+	After the simulation developed was shown to properly model the laser \ac{DED} process for a material where the material properties were known, Ti-64, it was understood that the model held true to the fundamental physics equations which the model was developed upon and any assumptions in the model were accurate enough to produce accurate results.  This was detailed in Section \ref{model_description}. 
+	If the material properties did not have a drastic effect on the results of the model, then a generic set of aluminum material properties could have been collected and been sufficient for the targeted alloy, 7050.  This proved not to be the case, as was expected due to the range of alloying elements in aluminum alloys and their dramatic effect on the material properties.  This resulted in effort needing to be exerted in order to get an accurate model for the desired 7050 alloy.
+}
+
+\added[comment={Addressed application of other search algorithms\label{rev:algrothims}}]{
+	The Nelder-Mead algorithm proved to be an efficient method for finding the material properties dataset which produced accurate results.  Though more efficient than traditional \ac{FEA}, the model still is slow taking several hours to produce the needed results.  This means that search algorithm selected needed to be efficient and not required numerous queries in order to achieve a minimum error.  The process of finding the derivative of the error function in this search would be possible if several new data points were selected around the point of interest resulting in the ability to find the first and second derivatives.  This would greatly increase the number of simulation runs required, exponentially increasing the time required for the search algorithm to converge.  This precluded the common multidimensional algorithms of the conjugate gradient method, full Newton method, Davidon-Fletcher-Powell, and Broyden-Fletcher-Goldfard-Shanno method.  Whereas, other methods which do not require knowledge of the gradient such as the Powell's method and Line searches typically require many more iterations to reach a minimum.  Therefore, if the derivatives are not known, or the derivatives are not continuous, then the Nelder-Mead algorithm should be attempted first	\cite{extremeoptimization}.  And upon efficient convergence of the Nelder-Mead, there was no need to investigate other optimization algorithms.
+}
+
+\added{
+	Upon minimization of the error, the results shown in Table \ref{tab:7000_mat_prop_complete} can be compared to Table \ref{tab:starting_mat_prop_complete} to see the difference between the properties which were found for a generic 
+	alloy and that of the optimized properties.  Two main observations can be made when comparing the results.
+}
+
+\added{	
+	The first is that the laser diameter is approximately half that of the starting value.  This derives from the difficulty of measuring the diameter of the laser without the appropriate dedicated equipment.  In this experiment, the starting laser diameter was selected based on experimentation where the laser was scanned on the surface of the substrate.  The width of the melt track was measured and used as the laser diameter, confounding the laser width with the processing parameter and the material properties.  This rudimentary method was a way to cheaply and quickly get an approximation of the laser diameter, but as was expected to improperly estimate the laser diameter.  This is due to the dependence on the absorbance of the laser by the material, its thermal conductivity, and specific heat as well as the processing parmeters.  Specialized equipment could have eliminated this variable, however that is expensive and did not significantly affect the convergence rate of the Nelder-Mead algorithm.  
+}
+
+\added{
+	Secondly, it is critical to review the difference between the alloys where the generic material properties were taken from and the experimentally used material.  The generic material properties' dataset came from combining the data from pure aluminum \cite{leitner_thermophysical_2017, boyden_temperature_2006}.  When adding alloying elements this can have a drastic effect on the material properties.  In this experiment, the alloy of 7050 was used which contains alloying elements of  Copper (2.3\%), Magnesium (2.3\%), Zinc (6.2\%) and Zirconium (0.12\%).  This addition of alloying elements had an effect on the material properties in the following ways.  Firstly, the laser absorption at the liquidus temperature for the optimized dataset was triple that of the generic dataset.  Secondly, the specific heat at 733\degree C of the optimized data set was also nearly triple the generic dataset that of the generic dataset.  Conversely, at 922\degree C, the generic dataset was triple that of the optimized dataset values.  And lastly, the thermal conductivity of the optimized dataset was about double of that of the generic dataset at 1491\degree C.  These difference most likely arise from the alloying elements changing the lattice structure of the aluminum altering its material properties.
+}
+
+\added{
+	The model in this work was developed in response to a need from those developing processing parameters and path plans for the metal \ac{AM} process.  They were needing a model which was capable of quickly simulating the heat flow and buildup for a range of path plans and processing parameters.
+	This will allow for researchers to more efficiently test a wider range of parameters and path plans in order to better find a global optimal as opposed to the local optimization which might be obtained with a smaller scale set of parameters or path plans, both experimental and simulated.
+	With the current target of an efficient predictor of the thermal history completed, and an optimized input dataset for the high strength aluminum, it is possible to expand this model to predict more components of the build and increase its usefulness.
+}
+
+\added[comment={Added discussion about microstructure\label{rev:microstructure}}]{
+	The next target for the model is to add prediction of microstructure of the material.  This is particularly important for the aluminum alloy investigated in this paper because it is the main driving factor as to the expected performance of the final part\cite{guoMicrostructureMechanicalProperties2022}.
+	In order to predict the microstructural makeup of an \ac{AM} build, it is necessary to first find the thermal history due to the tight linking between the thermal history, cooling rates, and microstructure which is developed.  After this a range of models, both determination and probabilistic, can be used to predict the final microstructural makeup of a completed \ac{AM} build\cite{tanMicrostructureModellingMetallic2020}.  These results can then be used to predict the final part performance.  Moving forward, various methods of predicting the microstructure of the completed build will be evaluated as an intermediate step to estimating the ultimate performance of the component.
+}
+

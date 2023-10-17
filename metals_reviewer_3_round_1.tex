@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[margin=1in,letterpaper]{geometry}
+% \usepackage{caption,subcaption}
+% \usepackage{placeins}
+\usepackage{acronym}
+\usepackage{xr}
+\usepackage{hyperref}
+\input{sections/acronyms}
+\externaldocument[ppr-]{Flood_Appliation_of_Tuning_to_material_properties}
+
+\usepackage{acronym}
+\input{sections/acronyms}
+
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}}
+\begin{document}
+
+\title{Responses to comments from submission on metals-2665682\\Reviewer 3 Round 1}
+\date{}
+
+\maketitle
+
+The article is devoted to the current topic of modeling the manufacture of products using additive technologies. The article should be revised before publication.
+\begin{description}
+	\item[Comment 1.] The abstract should be expanded and more attention should be paid to the results obtained in the article.
+ 	\item[Response:]  The abstract has been updated to better detail the scope and results of the paper, noted in Footnote \ref{ppr-rev:abstract}
+ 	% 
+	\item[Comment 2.] Increase the number of keywords.
+ 	\item[Response:] The keywords of \Acf{AM} simulation and Input parameter optimization were added, see footnote \ref{ppr-rev:keywords}.
+	%  
+	\item[Comment 3.] Improve the introduction section. You write in general about the problems of modeling the resulting properties of printed parts. But it would be good to give specific examples. Show which models gave what accuracy and on what materials. Also, when justifying the need to model the properties of printed parts, you can refer to the need for subsequent post-processing. Almost any workpiece printed using additive technologies requires post-processing.
+
+	\url{https://doi.org/10.3390/ma16134529}
+	
+	\url{https://doi.org/10.1007/978-3-030-36296-6_4}
+	
+	To do this, you need to know their properties.
+	\item[Response:] Please see below bullet points detailing response:
+		\begin{itemize}
+			\item Notes were added detailing the materials and accuracy of the models referenced, Footnote \ref{ppr-ref:modelMatAcc}.
+			\item In order to better set up the need for this work, a paragraph was added in the introduction to show the need for more accurate thermal models, this is annotated with footnote \ref{ppr-rev:need}.  
+			\item The authors are unclear as to what is meant by the need to know the material properties of the printed part in order to perform post-processing.  The thermo-physical properties found using this method are really only valid for this model and should be used tentatively in other models as they are not measured or validated with any other models.  If the reviewer is referring to properties such as fatigue strength, UTS, microstructure, or any other property which could be derived from the thermal history of the build those are out of scope of this paper but the ability to estimate those from the thermal history are noted in the introduction and discussion sections, see footnotes \ref{ppr-rev:need} and \ref{ppr-rev:microstructure}.
+		\end{itemize}
+	% 
+	\item[Comment 4.] You use high-strength aluminum alloy for modeling. A given alloy will have a different structure under different types of heat treatment. It will be significantly influenced by the heating mode and cooling rate. How does your model take this into account? It would be good to describe the microstructure and its influence on properties in more detail in the article.
+	\item[Response:] The discussion of microstructure is out of scope of this article.  It has been noted in the discussion, footnote \ref{ppr-rev:microstructure} as a possible future research, but the current model only predicts the thermal components of the \ac{AM} process. 
+	% 
+	\item[Comment 5.] At the beginning of the Methodology section, write a general work plan. At the end of the Introduction section, you write that you will be researching a high-strength aluminum alloy. And in the technique you make a model on a titanium alloy. Write that at the beginning you created a model, tested and verified it on a titanium alloy. And then they applied it to aluminum alloy.
+	\item[Response:] A sketch of the methodology  was added to the paper in Section \ref{ppr-methodsOverview}, noted in Footnote \ref{ppr-rev:methodsSketch}, that gives an overview of the approach for this paper to provide clarity.
+	% 
+	\item[Comment 6.] Make all tables (2, 3, ..) the same way as table 6. That is, provide the property values. And then provide links where the data was taken from. Also, for the headings of all tables, write the data for which materials are given in the tables and graphs. Do not use abstract concepts - research material.
+	\item[Response:] Please see below bullet points detailing response:
+		\begin{itemize}
+			\item The values used in Table \ref{ppr-tab:ti64_properties} were updated as noted in footnote \ref{ppr-rev:updatedTable}.  All other tables did not include values which needed to be referenced, they all include values which were measured and used for experimentation or derived through analysis.  
+			\item All the tables and figures labels were reviewed and updated accordingly.  
+			\item The comment ``Do not use abstract concepts - research material'' is not understood by the authors.  If this is meant to say that Tables \ref{ppr-tab:sens_properties} and Table \ref{ppr-tab:crit_mat_prop} should be removed because they are simply research material.  The authors believed this was the best way to present the material in those tables in an easily digestible way by the readers.  If the reviewers would like to suggest a new method of presenting the information in an easily understood manner the authors are open to presenting the same information in another way.
+		\end{itemize}
+	% 
+	\item[Comment 7.] In Figure 2 you show photographs of the microstructure. Please provide a link to where this data was taken from. Or write the conditions for obtaining and the method for obtaining these samples. The same is true for Figure 7.
+	\item[Response:] A more detailed explanation of the etching of the Ti-64 has been added, see footnote \ref{ppr-ref:ti64Etch}.  Similarly, more detail was added to the aluminum section, see footnote \ref{ppr-ref:alEtch}
+	% 
+	\item[Comment 8.] In general, it would be good to finalize the article in terms of consistency of presentation. Make it more consistent and understandable. At the beginning of the methodology section, give a general work plan. Write in more detail the purpose of the work at the end of the introduction. Explain why there are different materials, sometimes aluminum alloy, sometimes titanium. And so on.
+	\item[Response:] In order to address this, the authors have added a section at the end of the introduction and beginning of the methodology detailing the planned approach for this paper including explicitly detailing when and why materials were selected, see Footnotes \ref{ppr-ref:introPlan} and \ref{ppr-rev:methodsSketch}
+	% 
+	\item[Comment 9.] Label the legend for figures 8 and 9. Explain under the figure or in the figure the meaning of these dots of different colors.
+	\item[Response:] The captions of Figure \ref{ppr-fig:response_complete} and Figure \ref{ppr-fig:response_zoomed} have been updated to include the explanations of the markers, this is also noted in Footnote \ref{ppr-rev:figCaptions}.
+	% 
+	\item[Comment 10.] Conclusions should be further developed. Describe the results obtained more fully. Give numerical values, give the accuracy of the models in more detail with the figures.
+	\item[Response:] The previous discussion section was more appropriately renamed the Conclusions, Section \ref{ppr-conclusions} and also noted in Footnote \ref{ppr-rev:conclusions} and a new discussion section was added, Section \ref{ppr-discussion}, this is also noted in Footnote \ref{ppr-rev:dicussion}.  The new conclusions' section was also updated to more directly highlight the results, Footnote \ref{ppr-rev:newConclusions}
+\end{description}
+
+
+\end{document}

@@ -56,6 +56,7 @@ Lastly, the model includes true ray tracing enabling shadowing of the laser, the
 
 The main objective of the model is to accurately predict the thermal history of the build.  
 In order to initially validate the models, the well-characterized and published material of Ti-64 was used.  The validation was done by scanning a laser on the surface of a substrate at three energy densities with the experimental parameters found in Table \ref{tab:ti64_parameters} and the material properties used in the simulations can be seen in Table \ref{tab:ti64_properties}.
+\comment{Updated table to include the property values for Ti-64\label{rev:updatedTable}}
 \begin{table}[!htb] \centering
 	\caption{Simulation parameters used in Ti-64 validation}
 	\label{tab:ti64_parameters}
@@ -71,19 +72,20 @@ In order to initially validate the models, the well-characterized and published 
 		\end{tabular}
 \end{table}
 \begin{table}[!htb] \centering
-	\caption{Ti-64  material properties used in validation}
+	\caption{Ti-64 material properties used in validation}
 	\label{tab:ti64_properties}
-	\begin{tabular}{|c|c|} \hline
-		Material Property & Reference \\ \hline
-		Solidus temperature & \cite{welschgerhard_1993} \\ \hline
-		Liquidus temperature & \cite{mills_2002} \\ \hline
-		Solid density  & \cite{mills_2002} \\ \hline
-		Fluid density & \cite{mills_2002} \\ \hline
-		Specific heat & \cite{boivineau_2006} \\ \hline
-		Thermal conductivity & \cite{boivineau_2006} \\ \hline
-		Absorptivity & \cite{fan_2012} \\ \hline
+	\begin{tabular}{|c|c|c|} \hline
+		Material Property & Value & Reference \\ \hline
+		Solidus temperature & 1603\degree C & \cite{welschgerhard_1993} \\ \hline
+		Liquidus temperature & 1650\degree C & \cite{mills_2002} \\ \hline
+		Solid density & 4420.0 $\frac{kg}{m^3}$ & \cite{mills_2002} \\ \hline
+		Fluid density & 3920.0 $\frac{kg}{m^3}$ & \cite{mills_2002} \\ \hline
+		Specific heat &  0.4 - 1.15 $\frac{J}{gK}$ & \cite{boivineau_2006} \\ \hline
+		Thermal conductivity & 5.0 - 43.0 $\frac{W}{mK}$ & \cite{boivineau_2006} \\ \hline
+		Absorptivity & 0.4 & \cite{fan_2012} \\ \hline
 	\end{tabular}
 \end{table}
+
 
 There are several representations of the energy density of a laser beam in \ac{AM} but the most appropriate method of calculating the energy for the \ac{DED} process is to use a surface energy density, Equation \ref{eqn:eng_density}, where P is laser power, A is the laser spot area, and v is the scan speed \cite{kurzynowskiEffectScanningSupport2019}.
 \begin{equation}
@@ -91,7 +93,7 @@ There are several representations of the energy density of a laser beam in \ac{A
 \end{equation}
 
 
-In order to analyze the results, the samples from the three parameter sets were sectioned, polished, and etched to make the melt track visible as can be seen in Figure \ref{fig:melt_track_image}, this was done at three points along the melt length.  
+In order to analyze the results, the samples from the three parameter sets were sectioned \added{using a wire \ac{EDM}}, polished \added{using an automated polisher to a mirror finish}, and etched \added[comment={Detailed Ti64 etching routine \label{ref:ti64Etch}}]{using Kroll's reagent} to make the melt track visible \added{with an optical microscope} as can be seen in Figure \ref{fig:melt_track_image}, this was done at three points along the melt length.  
 \begin{figure}[!htb]
 	\centering
 		\begin{subfigure}{0.495\textwidth}
