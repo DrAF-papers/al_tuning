@@ -207,6 +207,7 @@ truncate-option 'breakall,fit', passed to package truncate
 changes-option 'commentmarkup=footnote'
 changes-option 'authormarkup=none'
 changes-option 'defaultcolor=red'
+changes-option 'final'
 (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/truncate/truncate.sty))
 (./sections/acronyms.tex)
@@ -241,7 +242,7 @@ nary-english.trsl)
 (./Flood_Appliation_of_Tuning_to_material_properties.out)
 (./Flood_Appliation_of_Tuning_to_material_properties.out)
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd)
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
 [][]\T1/ppl/m/n/7 (+20) creativecommons.org/licenses/by/[][]
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd)
@@ -253,34 +254,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--83
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eur.cfg)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 83.
+(hyperref)                removing `\let' on input line 87.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 83.
+(hyperref)                removing `\let' on input line 87.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 83.
+(hyperref)                removing `\@ac' on input line 87.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 83.
+(hyperref)                removing `\let' on input line 87.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\added' on input line 83.
+(hyperref)                removing `\let' on input line 87.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 83.
+(hyperref)                removing `\let' on input line 87.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 83.
+(hyperref)                removing `\let' on input line 87.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
 [][]\T1/ppl/m/n/7 (+20) creativecommons.org/licenses/by/[][]
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd)
 (./sections/introAMsim.tex
@@ -293,7 +294,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-8.0pt}.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Definitions/logo-mdpi-
-eps-converted-to.pdf> <./Definitions/logo-orcid.pdf>]
+eps-converted-to.pdf> <./Definitions/logo-orcid.pdf>])
+(./sections/methodsOverview.tex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -302,7 +304,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[2]
+[2] (./sections/model_description.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -311,7 +313,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[3]) (./sections/methodsOverview.tex) (./sections/model_description.tex
+[3 <./images//TEMP.png> <./images//PHASE.png> <./images//COOLRATE.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -320,7 +322,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[4]
+[4]) (./sections/algrothim_description.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -329,7 +331,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[5 <./images//TEMP.png> <./images//PHASE.png> <./images//COOLRATE.png>]
+[5 <./images//melt_track_image.png> <./images//melt_track_bitmap.png> <./images
+//ti64_melt_track_width.png> <./images//ti64_melt_track_depth.png>])
+(./sections/sensetivity_results.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -338,12 +342,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[6 <./images//melt_track_image.png> <./images//melt_track_bitmap.png>])
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\replaced' on input line 96.
-
-(./sections/algrothim_description.tex
+[6 <./images//nm_flow.pdf>]) (./sections/sim_setup.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -352,39 +351,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[7 <./images//ti64_melt_track_width.png> <./images//ti64_melt_track_depth.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
-[8 <./images//nm_flow.pdf>]) (./sections/sensetivity_results.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
-[9])
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\replaced' on input line 102.
-
-(./sections/sim_setup.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
-[10 <./images//slice_y_annotated.png> <./images//slice_x_annotated.png>])
+[7 <./images//slice_y_annotated.png> <./images//slice_x_annotated.png>])
 (./sections/sim_analysis.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -394,7 +361,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[11 <./images//melt_validation_example.png>]) (./sections/results.tex
+[8 <./images//melt_validation_example.png>]) (./sections/results.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -403,7 +370,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[12 <./images//7075_7_8C.jpg>]) (./sections/validation.tex
+[9 <./images//7075_7_8C.jpg> <./images//response_complete.png>])
+(./sections/validation.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -412,7 +380,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[13 <./images//response_complete.png> <./images//response_zoomed.png>]
+[10 <./images//response_zoomed.png> <./images//tuning_error_depth_complete.png>
+ <./images//tuning_error_width_complete.png>])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -421,8 +390,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[14 <./images//tuning_error_depth_complete.png> <./images//tuning_error_width_c
-omplete.png>])
+[11 <./images//melt_track_val_baseline_depth.png> <./images//melt_track_val_bas
+eline_width.png>] (./sections/discussion.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -431,36 +400,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[15 <./images//melt_track_val_baseline_depth.png> <./images//melt_track_val_bas
-eline_width.png> <./images//melt_track_val_depth.png> <./images//melt_track_val
-_width.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\added' on input line 116.
-
-(./sections/discussion.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
-[16]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
-[17])
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\replaced' on input line 124.
-
+[12 <./images//melt_track_val_depth.png> <./images//melt_track_val_width.png>])
 (./sections/conclusions.tex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -470,7 +410,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[18] (./Flood_Appliation_of_Tuning_to_material_properties.bbl
+[13] (./Flood_Appliation_of_Tuning_to_material_properties.bbl
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -479,7 +419,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[19]
+[14]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -488,16 +428,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[20]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
-[21]) 
+[15]) 
 AED: lastpage setting LastPage
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -507,7 +438,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[22] (./Flood_Appliation_of_Tuning_to_material_properties.aux) )
+[16] (./Flood_Appliation_of_Tuning_to_material_properties.aux) )
 (see the transcript file for additional information){/usr/share/texmf/fonts/enc
 /dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/
 base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy
@@ -519,6 +450,6 @@ ts/type1/public/cm-super/sfss0800.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
 no/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on Flood_Appliation_of_Tuning_to_material_properties.pdf (22 pag
-es, 14246296 bytes).
+Output written on Flood_Appliation_of_Tuning_to_material_properties.pdf (16 pag
+es, 14234864 bytes).
 Transcript written on Flood_Appliation_of_Tuning_to_material_properties.log.
